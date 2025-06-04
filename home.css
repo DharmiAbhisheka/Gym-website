@@ -1,0 +1,165 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Permanent+Marker&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body{
+    background-color: #000000;;
+     
+}
+
+.topHeader {
+    background-color: rgba(0, 0, 0, 0.762);
+    padding: 5px 10px;
+    
+}
+
+.ButtonAlign {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 5px 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.ButtonAlign button {
+    background-color: #f0e21a;
+    border: none;
+    border-radius: 30px;
+    padding: 18px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    
+    transition: 0.3s;
+    
+}
+
+.ButtonAlign button:hover {
+    background-color:  #c8bd24;
+    color: rgb(255, 255, 255);
+    
+}
+
+.ButtonAlign a {
+    color: rgb(0, 0, 0); 
+    text-decoration: none; /* Remove underline from the link */
+    font-family: 'Roboto Slab', serif;
+}
+.ButtonAlign a:hover{
+    color: white;
+}
+
+/* Navbar Styling */
+.navbar-Section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 15px 20px; */
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(244, 244, 244);
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+    font-family: 'Roboto Slab', serif;
+}
+
+.navbar a:hover {
+    background-color: #f0e21a;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-Section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ButtonAlign {
+        justify-content: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+footer {
+    
+    background-color: rgba(255, 255, 255, 0.762);
+    
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.footer_section li{
+    list-style: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: small;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    
+    font-style: normal;
+
+
+    
+}
+.footer_section a{
+    
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: small;
+    padding: 10px 15px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    transition: color 0.3s ease;
+
+    
+}
+.footer_section a:hover{
+    color: #a89d00;
+    transform: scale(1.2);
+}
+.socialmedia li{
+    list-style: none;
+    display: inline;
+}
+.socialmedia li img {
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.socialmedia li img:hover {
+     transform: scale(1.2); /* Increase image size by 20% */
+}

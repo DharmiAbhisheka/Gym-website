@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500&family=Poppins:wght@400;500&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <title>FitZone Fitness Center</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        .container{
+            
+            
+            display: flex;
+            justify-content:space-between;
+            margin-left: 1%;
+            margin-right: 0%;
+            
+        }
+         .li{
+            list-style: disc;
+            text-align: left;
+            font-size: 16px;
+            
+            color: rgb(255, 255, 255);
+            
+        }
+        
+        button {
+   
+    border: none;
+    
+    padding-left:20%;
+    padding-right:20%;
+    font-size: 16px;
+    cursor: pointer;
+    
+    transition: 0.2s;
+    
+}
+
+ button:hover {
+    background-color:  #c8bd24;
+    color: rgb(255, 255, 255);
+    
+}
+
+ a {
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
+    font-family: 'Roboto Slab', serif;
+}
+ a:hover{
+    color: white;
+}
+
+.packages{
+    /* background-color: #39393951; */
+     text-align: center; 
+     padding-top: 50px; 
+     padding-left: 120px;
+    padding-right: 110px; 
+    height: 750px; 
+    width: 1800px; 
+    overflow: auto;
+    
+}
+.packages::-webkit-scrollbar{
+    display: none;
+}
+
+.package-container{
+    background-color: #39393951; 
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    text-align: center; 
+    padding-top: 10px;
+}
+h1{
+    padding: 26px;
+}
+.price{
+    background-color: rgb(189, 174, 0); 
+    border-radius: 0%; 
+    color: white;
+    width: 100%; 
+    height: 50px; 
+    align-content: center; 
+    
+    font-size: larger; 
+    font-weight: bolder;
+
+}
+.pck_name{
+    background-color: rgb(255, 254, 254);
+     width: 300px;
+     color: #000000;
+}
+       
+
+        
+    </style>
+<body>
+    <div>
+        <div style="background-color: black ;color: black;">
+            .
+        </div>
+        <header class="topHeader">
+            <div class="ButtonAlign">
+                <input type="text" id="searchInput" placeholder="Search..." class="search-bar" style="margin-right:10%;padding: 8px; border-radius: 5px; border: none;width: 200px;height: 40px;">
+                <button><a href="login.php">Login</a></button>
+                <button><a href="register.php">Register</a></button>
+            </div>
+            <br>
+            <div class="navbar-Section">
+                <div class="logo">
+                    <img src="images/logo.png" alt="FitZone Logo"  style="margin-top: -90px;height:150px;">
+                </div>
+                <ul class="navbar">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="program.html">Programs</a></li>
+                    <li><a href="personaltraining.html">Personal Training</a></li>
+                    <li><a href="contactus.php">Contact Us</a></li>
+                </ul>
+            </div>
+            <br>
+        </header>
+    </div>
+   
+
+    
+    <br><br><br>
+
+    <div class="container">
+        <div>
+            <img src="images/3fc83fddf9d75a1cd9d8834c67df6084.jpg" alt="Gym Banner" style="width: 500px;">
+        </div>
+    
+        <div class="packages" id="fade-in-text">
+            <!-- Membership Packages -->
+            <div class="container">
+                <!-- Basic -->
+                <div class="package-container container" id="fade-in-text1">
+                    <div class="pck_name">
+                        <br><br>
+                        <h1>Basic Membership</h1><br>
+                        <div class="price">Rs. 2,000</div>
+                    </div>
+                    <div style="background-color: rgb(32, 33, 33); padding: 50px; width: 500px;">
+                        <ul>
+                            <li class="li">Access to all gym equipment</li>
+                            <li class="li">No group classes or personal training</li>
+                        </ul><br><br><br>
+                        <button style="background-color: #e9da00; padding: 9px 20px; border-radius: 5px;">
+                            <a href="register.php">Register</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+          
+            <!-- Standard -->
+            <div class="container">
+                <div class="package-container container" id="fade-in-text2">
+                    <div class="pck_name">
+                        <br><br>
+                        <h1>Standard Membership</h1><br><br>
+                        <div class="price">Rs. 3,500</div>
+                    </div>
+                    <div style="background-color: rgb(32, 33, 33); padding: 50px; width: 500px;">
+                        <ul>
+                            <li class="li">Access to all gym equipment</li>
+                            <li class="li">Full access to group classes</li>
+                            <li class="li">Access to locker rooms and showers</li>
+                        </ul><br><br><br>
+                        <button style="background-color: #e9da00; padding: 9px 20px; border-radius: 5px;">
+                            <a href="register.php">Register</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Premium -->
+            <div class="container">
+                <div class="package-container container" id="fade-in-text3">
+                    <div class="pck_name">
+                        <br><br>
+                        <h1>Premium Membership</h1><br><br>
+                        <div class="price">Rs. 6,000</div>
+                    </div>
+                    <div style="background-color: rgb(32, 33, 33); padding: 50px; width: 500px;">
+                        <ul>
+                            <li class="li">All features from standard plan</li>
+                            <li class="li">Personal training sessions per month</li>
+                            <li class="li">Free nutrition counseling</li>
+                        </ul><br><br><br>
+                        <button style="background-color: #e9da00; padding: 9px 20px; border-radius: 5px;">
+                            <a href="register.php">Register</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Family -->
+            <div class="container">
+                <div class="package-container container" id="fade-in-text4">
+                    <div class="pck_name">
+                        <br><br>
+                        <h1>Family Membership</h1><br><br><br>
+                        <div class="price">Rs. 20,000</div>
+                    </div>
+                    <div style="background-color: rgb(32, 33, 33); padding: 50px; width: 500px;">
+                        <ul>
+                            <li class="li">3 members package</li>
+                            <li class="li">Full gym equipment access</li>
+                            <li class="li">Full access to group classes</li>
+                            <li class="li">Rs. 4,000 for additional member</li>
+                        </ul><br><br><br>
+                        <button style="background-color: #e9da00; padding: 9px 20px; border-radius: 5px;">
+                            <a href="register.php">Register</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Corporate -->
+            <div class="container">
+                <div class="package-container container" id="fade-in-text5">
+                    <div class="pck_name">
+                        <br><br>
+                        <h1>Corporate Membership</h1><br><br>
+                        <div class="price">Rs. 28,500</div>
+                    </div>
+                    <div style="background-color: rgb(32, 33, 33); padding: 50px; width: 500px;">
+                        <ul>
+                            <li class="li">6 members package</li>
+                            <li class="li">Group discount for company employees</li>
+                            <li class="li">Wellness and stress management programs</li>
+                        </ul><br><br><br>
+                        <button style="background-color: #e9da00; padding: 9px 20px; border-radius: 5px;">
+                            <a href="register.php">Register</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Student -->
+            <div class="container">
+                <div class="package-container container" id="fade-in-text6">
+                    <div class="pck_name">
+                        <br><br>
+                        <h1>Student Membership</h1><br>
+                        <div class="price">Rs. 1,400</div>
+                    </div>
+                    <div style="background-color: rgb(32, 33, 33); padding: 50px; width: 500px;">
+                        <ul>
+                            <li class="li">Special discount for students</li>
+                            <li class="li">Limited time access (6:00 AM - 4:00 PM)</li>
+                        </ul><br><br><br>
+                        <button style="background-color: #e9da00; padding: 9px 20px; border-radius: 5px;">
+                            <a href="register.php">Register</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Day Pass -->
+            <div class="container">
+                <div class="package-container container" id="fade-in-text7">
+                    <div class="pck_name">
+                        <br><br>
+                        <h1>Day Pass</h1><br><br>
+                        <div class="price">Rs. 1,000</div>
+                    </div>
+                    <div style="background-color: rgb(32, 33, 33); padding: 50px; width: 500px;">
+                        <ul>
+                            <li class="li">One-time full access to gym and classes</li>
+                        </ul><br><br><br>
+                        <button style="background-color: #e9da00; padding: 9px 20px; border-radius: 5px;">
+                            <a href="register.php">Register</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- VIP -->
+            <div class="container">
+                <div class="package-container container" id="fade-in-text8">
+                    <div class="pck_name">
+                        <br><br>
+                        <h1>VIP Membership</h1><br><br><br><br><br>
+                        <div class="price">Rs. 10,000</div>
+                    </div>
+                    <div style="background-color: rgb(32, 33, 33); padding: 50px; width: 500px;">
+                        <ul>
+                            <li class="li">Unlimited personal training</li>
+                            <li class="li">Private workout space</li>
+                            <li class="li">Sauna, spa & premium facilities</li>
+                            <li class="li">Free gym merchandise</li>
+                        </ul><br><br><br>
+                        <button style="background-color: #e9da00; padding: 9px 20px; border-radius: 5px;">
+                            <a href="register.php">Register</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <br><br><br>
+        </div>
+    
+      
+    
+    </div>
+    <!-- Footer -->
+<div>
+    <div style="background-color: beige;color: beige;">.</div>
+    <footer>
+        <div style="margin-left: 5%;">
+            <ul class="footer_section">
+                <img src="images/logo.png" alt="FitZone Logo"  style="margin-top: 0px;height:100px;">
+                <li>Kurunagala</li><br>
+                <li><img src="icons/call.png" style="width: 25px;padding: 5px;">0767791387</li>
+                <li><img src="icons/email2.png" style="width: 25px;padding: 5px;">fitzoneFC@gmail.com</li>
+                <li><img src="icons/address.png" style="width: 30px;padding: 5px;">Kurunagala</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="footer_section">
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="program.html">Programs</a></li>
+                <li><a href="personaltraining.html">Personal Training</a></li>
+                <li><a href="contactus.php">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="footer_section">
+                <li><a href="login.php">Login</a></li>
+                <li><a href="register.php">Register</a></li>
+                <li><a href="policy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="footer_section">
+                <div class="socialmedia">
+                    <li><img src="icons/fb2.png" alt="Facebook" style="width: 50px;"></li>
+                    <li><img src="icons/inster2.png" alt="Instagram" style="width: 50px;"></li>
+                    <li><img src="icons/tiktok.png" alt="TikTok" style="width: 50px;"></li>
+                </div>
+            </ul>
+        </div>
+    </footer>
+    <div style="background-color: #c4b704; color: rgb(21, 21, 12); text-align: center; font-size: smaller;">
+        <br>© 2025 FitZone Fitness Center. All rights reserved<br>
+    </div>
+</div>
+    
+        
+
+
+
+
+
+        <script>
+            window.onload = function() {
+          
+           document.getElementById("fade-in-text1").style.opacity = 1;
+           document.getElementById("fade-in-text2").style.opacity = 1;
+           document.getElementById("fade-in-text3").style.opacity = 1;
+           document.getElementById("fade-in-text4").style.opacity = 1;
+           document.getElementById("fade-in-text5").style.opacity = 1;
+           document.getElementById("fade-in-text6").style.opacity = 1;
+           document.getElementById("fade-in-text7").style.opacity = 1;
+           document.getElementById("fade-in-text8").style.opacity = 1;
+
+       };
+
+
+       const searchInput = document.getElementById("searchInput");
+    const navLinks = document.querySelectorAll(".navbar li");
+
+    searchInput.addEventListener("keyup", function () {
+        const searchTerm = this.value.toLowerCase();
+        let matches = false;
+
+        navLinks.forEach(link => {
+            const text = link.textContent.toLowerCase();
+            if (text.includes(searchTerm)) {
+                link.style.display = "inline-block";  // keep inline
+                matches = true;
+            } else {
+                link.style.display = "none";
+            }
+        });
+
+        // Handle no results message
+        const existingMessage = document.getElementById("noResultsMessage");
+        if (!matches) {
+            if (!existingMessage) {
+                const message = document.createElement("p");
+                message.id = "noResultsMessage";
+                message.textContent = "No results found";
+                message.style.color = "white";
+                message.style.marginTop = "10px";
+                document.querySelector(".navbar-Section").appendChild(message);
+            }
+        } else {
+            if (existingMessage) {
+                existingMessage.remove();
+            }
+        }
+    });
+       </script>
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500&family=Poppins:wght@400;500&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <title>FitZone Fitness Center</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+         .slider-container {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            overflow: hidden;
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #a8a8a7;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .slide img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .description {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #ffffff;
+            padding: 0 10px;
+            background-color: rgba(41, 38, 38, 0.886);
+            padding: 5px;
+        }
+
+    
+        .slide.active {
+            display: block;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 50%;
+        }
+
+        .prev { left: 10px; }
+        .next { right: 10px; }
+
+        .prev:hover, .next:hover {
+            background-color: black;
+        }
+
+    </style>
+<body>
+    <div>
+        <div>
+            <div style="background-color: black ;color: black;">
+                .
+            </div>
+            <header class="topHeader">
+                <div class="ButtonAlign">
+                    <input type="text" id="searchInput" placeholder="Search..." class="search-bar" style="margin-right:10%;padding: 8px; border-radius: 5px; border: none;width: 200px;height: 40px;">
+                    <button><a href="login.php">Login</a></button>
+                    <button><a href="register.php">Register</a></button>
+                </div>
+                <br>
+                <div class="navbar-Section">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="FitZone Logo"  style="margin-top: -90px;height:150px;">
+                    </div>
+                    <ul class="navbar">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="program.html">Programs</a></li>
+                        <li><a href="personaltraining.html">Personal Training</a></li>
+                        <li><a href="contactus.php">Contact Us</a></li>
+                    </ul>
+                </div>
+                <br>
+            </header>
+        </div>
+
+    
+    <br>
+    <br><br>
+    
+    <section style="background-color: rgb(0, 0, 0);">
+        <p style="color: rgb(255, 217, 0); padding-top: 20px; text-align: center; font-size: 30px; font-weight: bolder; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">OUR FITNESS COACHES</p>
+
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="images/88d11a3428462b2e143d8c4a28af7a60.jpg"  style="width:100%; " alt="David Cooper">
+                    <p class="description" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px;"> David Cooper - Strength and Conditioning Expert</p>
+                    <p class="description" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 15px; text-align: justify;padding: 10px;">David Cooper is a seasoned fitness coach with over 10 years of experience in the fitness industry. He is a certified personal trainer specializing in strength training, cardiovascular fitness, and functional movements.
+
+                              David's training philosophy focuses on building strength, endurance, and flexibility through a mix of traditional weight training, high-intensity interval training (HIIT), and functional exercises. He emphasizes proper form, injury prevention, and creating customized programs tailored to each client's fitness goals. Whether you're training for a specific event, trying to lose weight, or simply improving your overall fitness, David’s workouts will push you to reach new heights.
+                        
+                        David believes that a strong foundation in strength training is key to overall physical health. He helps clients progressively increase their strength while maintaining functional movement patterns, making everyday activities easier and more enjoyable.</p>
+                </div>
+                <div class="slide">
+                    <img src="images/unblurimageai_upscaler_istockphoto-856797530-612x612.jpg" alt="Isabela Manchester">
+                    <p class="description" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px;" >Isabela Manchester - Yoga and Flexibility Specialist</p>
+                    <p class="description" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 15px; text-align: justify;padding: 10px;">Isabela Manchester is an expert yoga instructor with a deep passion for Hatha and Vinyasa yoga. With over 8 years of teaching experience, she has helped countless individuals improve their flexibility, strength, and mental well-being through yoga practice.
+
+                        Isabela’s classes combine mindful breathing, gentle stretches, and strength-building postures to enhance both physical and mental health. She specializes in making yoga accessible to all levels, whether you're a beginner looking to improve flexibility or an advanced practitioner aiming to deepen your practice.
+                        
+                        Isabela’s teaching focuses on proper alignment, balance, and breath control, ensuring a calming environment that promotes mental clarity and emotional well-being. Her classes are designed to reduce stress, increase flexibility, and create a sense of peace both in and out of the studio.</p>
+                </div>
+                <div class="slide">
+                    <img src="images/young-adult-doing-indoor-sport-gym_23-2149205541.jpg" alt="Caleb Wilder">
+                    <p class="description"  style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px;">Caleb Wilder - HIIT and Functional Fitness Specialist</p>
+                    <p class="description" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 15px; text-align: justify;padding: 10px;">Caleb Wilder is an experienced fitness coach who specializes in high-intensity interval training (HIIT) and functional conditioning. His training methods are designed to challenge clients' endurance, strength, and agility, helping them develop the fitness needed for everyday life and competitive sports.
+
+                        Caleb’s approach to training combines short bursts of intense exercise with periods of rest to help clients burn fat, build muscle, and improve overall fitness levels. His workouts are dynamic, targeting all major muscle groups, and are designed to push clients to their limits.
+                        
+                        Caleb emphasizes functional movements that improve everyday mobility, such as squats, lunges, and core work. His philosophy is based on the idea that fitness should not only look good but should improve the way you feel and move in your daily life.</p>
+                </div>
+            </div>
+
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br>
+
+        <div>
+            <div style="background-color: beige;color: beige;">
+                .
+            </div>
+            <footer>
+                
+                    <div style="margin-left: 5%;">
+                        <ul class="footer_section">
+                            <img src="images/logo.png" alt="FitZone Logo"  style="margin-top: 0px;height:100px;">
+                            <li>Kurunagala</li><br>
+                            <li><img src="icons\call.png" style="width: 25px;padding-left: 5px;padding-right: 5px;">0767791387</li>
+                            <li><img src="icons\email2.png" style="width: 25px;padding-left: 5px;padding-right: 5px;">fitzoneFC@gmail.com</li>
+                            <li><img src="icons\address.png" alt="Address" style="width: 30px;padding-left: 5px;padding-right: 5px;">Kurunagala</li>
+                           
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="footer_section">
+                            
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="membership.html">Membership</a></li>
+                            <li><a href="program.html">Programs</a></li>
+                            <li><a href="personaltraining.html">Personal Training</a></li>
+                            <li><a href="contactus.php">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="footer_section">
+                            <li><a href="login.php">Login</a></li>
+                            <li><a href="register.php">Register</a></li>
+                            <li><a href="policy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms & Conditions</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="footer_section">
+                            <div class="socialmedia">
+                                <li><img src="icons\fb2.png" alt="Facebook" style="width: 50px;padding-left: 5px;padding-right: 5px;"></li>
+                                <li><img src="icons\inster2.png" alt="Instergram" style="width: 50px;padding-left: 5px;padding-right: 5px;"></li>
+                                <li><img src="icons\tiktok.png" alt="TikTok" style="width: 50px;padding-left: 5px;padding-right: 5px;"></li>
+                            </div>
+                            
+                           
+                            
+                        </ul>
+                    </div>
+
+            </footer>
+            <div style="background-color: #c4b704 ;color: rgb(21, 21, 12);text-align: center;font-size: smaller;">
+                <br>© 2025 FitZone Fitness Center. All rights reserved<br>
+            </div>
+
+        </div>
+        
+
+        <script>
+           
+            window.onload = function() {
+                let currentIndex = 0;
+                const slides = document.querySelectorAll('.slide');
+    
+                function changeSlide(direction) {
+                    slides[currentIndex].classList.remove('active');
+                    currentIndex = (currentIndex + direction + slides.length) % slides.length;
+                    slides[currentIndex].classList.add('active');
+                }
+    
+                document.querySelector(".prev").addEventListener("click", () => changeSlide(-1));
+                document.querySelector(".next").addEventListener("click", () => changeSlide(1));
+            };
+
+
+
+    //    search bar 
+            const searchInput = document.getElementById("searchInput");
+    const navLinks = document.querySelectorAll(".navbar li");
+
+    searchInput.addEventListener("keyup", function () {
+        const searchTerm = this.value.toLowerCase();
+        let matches = false;
+
+        navLinks.forEach(link => {
+            const text = link.textContent.toLowerCase();
+            if (text.includes(searchTerm)) {
+                link.style.display = "inline-block"; 
+                matches = true;
+            } else {
+                link.style.display = "none";
+            }
+        });
+
+      
+        const existingMessage = document.getElementById("noResultsMessage");
+        if (!matches) {
+            if (!existingMessage) {
+                const message = document.createElement("p");
+                message.id = "noResultsMessage";
+                message.textContent = "No results found";
+                message.style.color = "white";
+                message.style.marginTop = "10px";
+                document.querySelector(".navbar-Section").appendChild(message);
+            }
+        } else {
+            if (existingMessage) {
+                existingMessage.remove();
+            }
+        }
+    });
+        </script>
+    
+
+</body>
+</html>

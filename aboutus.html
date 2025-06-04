@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500&family=Poppins:wght@400;500&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <title>FitZone Fitness Center</title>
+    <link rel="stylesheet" href="home.css">
+    
+
+
+    <style>
+        .vismis{
+            
+            padding: 0px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0px;
+            margin-left: 10%;
+            margin-right: 10%;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .vismis:hover{
+            cursor: pointer;
+        }
+        .vismis-sub{
+            
+           padding:1%;
+            width: 50%;
+        }
+        .vismis-sub:hover{
+            font-weight: bold;
+            cursor: pointer;
+        }
+        h1,h3{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            
+         
+    
+        }
+        h1{
+            font-size: 40px;
+
+        }
+        #fade:hover {
+    background-color: #1717174d!important;
+}
+        
+        p{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            margin-left:10%;
+            margin-right:10%;
+            letter-spacing: 0.1px;
+            font-size: 23px;
+
+        }
+        .vismis-sub:nth-child(1) {
+            background-color: #1717174d /* Red */
+        }
+        .vismis-sub:nth-child(2) {
+            background-color:  #1717174d /* Red */
+        }
+
+        .facilities{
+            background-color: #1717174d;
+            padding-left: 0px;
+            color: white;
+            margin-top: 0px;
+            margin-left: 10%;
+            margin-right: 10%;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .vismis-sub li{
+            list-style: none;
+            text-align: justify;
+            padding-left: 50px;
+        }
+        .images{
+            background-color: #efefeff7;
+            padding-left: 0px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0px;
+            
+
+        }
+        .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 3px; 
+    justify-content: center;
+    padding: 3px;
+}
+
+.gallery img {
+    width: 100%; 
+    height: 350px; 
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); 
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+
+    </style>
+<body>
+    <div>
+        <div style="background-color: black ;color: black;">
+            .
+        </div>
+        <header class="topHeader">
+            <div class="ButtonAlign">
+                <input type="text" id="searchInput" placeholder="Search..." class="search-bar" style="margin-right:10%;padding: 8px; border-radius: 5px; border: none;width: 200px;height: 40px;">
+                <button><a href="login.php">Login</a></button>
+                <button><a href="register.php">Register</a></button>
+            </div>
+            <br>
+            <div class="navbar-Section">
+                <div class="logo">
+                    <img src="images/logo.png" alt="FitZone Logo"  style="margin-top: -90px;height:150px;">
+                </div>
+                <ul class="navbar">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="program.html">Programs</a></li>
+                    <li><a href="personaltraining.html">Personal Training</a></li>
+                    <li><a href="contactus.php">Contact Us</a></li>
+                </ul>
+            </div>
+            <br>
+        </header>
+    </div>
+
+    
+    
+
+   <!-- Vision and Mission -->
+
+
+
+   <div style="background-image: url('images/03_31_2025_yX-Design.png');background-size: cover;"><br>
+    <br><br><br><br><br><br>
+    <!-- <div style="background-color: rgba(0, 0, 0, 0.514); margin-left: 100px; margin-right: 100px;"> -->
+        <br>
+        <div class="vismis" id="fade">
+            <div class="vismis-sub"  >
+                <br><br><br>
+                
+                <h1>Our Vision</h1>
+                <br>
+                <p>To be the ultimate destination for fitness enthusiasts by providing cutting-edge
+                     training, personalized wellness programs, and a motivating atmosphere that fosters
+                      growth and transformation</p>
+                      <br><br><br>
+    
+            </div>
+            <div class="vismis-sub" >
+                <br><br><br>
+                <h1>Our Mission</h1>
+                <br>
+                <p>Our mission is to create an inclusive fitness community that caters to all levels, 
+                    offering tailored training programs, engaging group classes, and nutritional guidance.
+                     Through our innovative web-based platform, we ensure seamless access to services, 
+                     empowering members to take control of their health and wellness.
+                    </p>
+                    <br><br><br>
+            </div>
+           
+        </div>
+
+
+        <br><br><br><br><br><br><br><br><br><br>
+        <!-- Facilities and equipments -->
+        <div class="facilities">
+            <div>
+                <h1><br>Facilities and Equipments <br></h1>
+                <br>
+                <div class="vismis" id="fade2">
+                    <div class="vismis-sub">
+                        <h3> Facilities  </h3><br>
+                        <li>✔️ Spacious Workout Area </li>
+                        <li>✔️ Strength Training Zone </li>
+                        <li>✔️ Cardio Section </li>
+                        <li>✔️ Personal Training Services </li>
+                        <li>✔️ Group Fitness Classes </li>
+                        <li>✔️ Functional Training Zone </li>
+                        <li>✔️ Nutrition Counseling </li>
+                        <li>✔️ Locker Rooms & Showers </li>
+                        <li>✔️ Recovery & Stretching Area </li>
+                        <li>✔️ Member Lounge & Wi-Fi .</li>
+    
+                    
+                    </div>
+    
+                    <div class="vismis-sub">
+                        <h3> Equipments  </h3><br>
+                        <li>✔️ Treadmills & Ellipticals </li>
+                        <li>✔️ Stationary Bikes & Rowers </li>
+                        <li>✔️ Dumbbells & Barbells</li>
+                        <li>✔️ Resistance Machines </li>
+                        <li>✔️ Kettlebells & Medicine Balls</li>
+                        <li>✔️ Smith Machine & Power Rack</li>
+                        <li>✔️ Battle Ropes & TRX Suspension Trainers</li>
+                        <li>✔️ Punching Bags & Boxing Gear </li>
+                        
+                        <li>✔️  Foam Rollers & Yoga Mats</li>
+    
+        
+                    </div>
+
+                    <br><br><br><br><br>
+    
+    
+                </div>
+                <br><br>
+                <div class="images gallery">
+                    <div class="gallery">
+                        <img src="images\b42af3236212a2951127e416692549ff.jpg" width="33.33%" alt="">
+                        <img src="images\5fcd696eb1a83d884159ac1faa8d7857.jpg" width="33.33%" alt="">
+                        <img src="images\8c05a4441da0c1a113a43ee3a42f96b6.jpg" width="33.33%" alt="">
+                        <img src="images\9b993e8ac088ffa1197c97c29879ab37.jpg" width="33.33%" alt="">
+                    </div>
+                    <div class="gallery">
+                        <img src="images\4ea8c3a51104b7169172da8a1cdc41c4.jpg" width="33.33%" alt="">
+                        <img src="images\d97df2b11c33070b2291356bcb5a772d.jpg" width="33.33%" alt="">
+                        <img src="images\a910131563e89fc6a300ebcc8bf4b73b.jpg" width="33.33%" alt="">
+                        <img src="images\e2086ae36bc71970a21fabe2f2020811.jpg" width="33.33%" alt="">
+                        
+                    </div>
+                    
+    
+                </div>
+                <div class="images gallery">
+                   
+                    
+    
+                </div>
+            
+            </div>
+         </div>
+
+
+
+
+        
+    </div>
+    
+<br><br><br><br>
+
+
+
+</div>
+<br><br><br>
+
+    
+   
+
+    <!-- Footer -->
+
+        <div>
+            <div style="background-color: beige;color: beige;">
+                .
+            </div>
+            <footer>
+                
+                    <div style="margin-left: 5%;">
+                        <ul class="footer_section">
+                            <img src="images/logo.png" alt="FitZone Logo"  style="margin-top: 0px;height:100px;">
+                            <li>Kurunagala</li><br>
+                            <li><img src="icons\call.png" style="width: 25px;padding-left: 5px;padding-right: 5px;">0767791387</li>
+                            <li><img src="icons\email2.png" style="width: 25px;padding-left: 5px;padding-right: 5px;">fitzoneFC@gmail.com</li>
+                            <li><img src="icons\address.png" alt="Address" style="width: 30px;padding-left: 5px;padding-right: 5px;">Kurunagala</li>
+                           
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="footer_section">
+                            
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="membership.html">Membership</a></li>
+                            <li><a href="program.html">Programs</a></li>
+                            <li><a href="personaltraining.html">Personal Training</a></li>
+                            <li><a href="contactus.php">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="footer_section">
+                            <li><a href="login.php">Login</a></li>
+                            <li><a href="register.php">Register</a></li>
+                            <li><a href="policy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms & Conditions</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="footer_section">
+                            <div class="socialmedia">
+                                <li><img src="icons\fb2.png" alt="Facebook" style="width: 50px;padding-left: 5px;padding-right: 5px;"></li>
+                                <li><img src="icons\inster2.png" alt="Instergram" style="width: 50px;padding-left: 5px;padding-right: 5px;"></li>
+                                <li><img src="icons\tiktok.png" alt="TikTok" style="width: 50px;padding-left: 5px;padding-right: 5px;"></li>
+                            </div>
+                            
+                           
+                            
+                        </ul>
+                    </div>
+
+            </footer>
+            <div style="background-color: #c4b704 ;color: rgb(21, 21, 12);text-align: center;font-size: smaller;">
+                <br>© 2025 FitZone Fitness Center. All rights reserved<br>
+            </div>
+
+        </div>
+        
+
+    <script>
+         window.onload = function() {
+       
+        document.getElementById("fade").style.opacity = 1;
+        document.getElementById("fade2").style.opacity = 1;
+    };
+
+
+
+    const searchInput = document.getElementById("searchInput");
+    const navLinks = document.querySelectorAll(".navbar li");
+
+    searchInput.addEventListener("keyup", function () {
+        const searchTerm = this.value.toLowerCase();
+        let matches = false;
+
+        navLinks.forEach(link => {
+            const text = link.textContent.toLowerCase();
+            if (text.includes(searchTerm)) {
+                link.style.display = "inline-block"; 
+                matches = true;
+            } else {
+                link.style.display = "none";
+            }
+        });
+
+      
+        const existingMessage = document.getElementById("noResultsMessage");
+        if (!matches) {
+            if (!existingMessage) {
+                const message = document.createElement("p");
+                message.id = "noResultsMessage";
+                message.textContent = "No results found";
+                message.style.color = "white";
+                message.style.marginTop = "10px";
+                document.querySelector(".navbar-Section").appendChild(message);
+            }
+        } else {
+            if (existingMessage) {
+                existingMessage.remove();
+            }
+        }
+    });
+    </script>
+    
+
+</body>
+</html>
